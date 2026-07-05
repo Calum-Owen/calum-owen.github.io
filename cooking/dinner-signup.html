@@ -1,0 +1,75 @@
+---
+layout: default
+title: Dinner Sign Up
+permalink: /cooking/dinner-signup.html
+---
+
+<link rel="stylesheet" href="/assets/css/cooking.css">
+
+<div class="container">
+  <a href="/cooking/" class="small-muted">&larr; Back to Cooking</a>
+
+  <h1>Dinner sign up</h1>
+  <p class="small-muted">Sign up to attend an upcoming dinner. If you are hosting or bringing a dish, note it when you sign up.</p>
+
+  <h2>Upcoming dinners</h2>
+  <table class="dinner-table" aria-describedby="dinners-desc">
+    <caption id="dinners-desc" class="small-muted">List of scheduled dinners</caption>
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Theme / Title</th>
+        <th>Location</th>
+        <th>RSVP</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- First dinner entry (please update as needed) -->
+      <tr>
+        <td>2026-07-12</td>
+        <td>Sample Dinner — Italian Night</td>
+        <td>Community Kitchen</td>
+        <td>Open (RSVP below)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2 style="margin-top:18px;">Sign up</h2>
+  <form id="dinner-signup-form" method="post" action="mailto:you@example.com" enctype="text/plain">
+    <div class="form-row">
+      <label for="name">Full name</label>
+      <input id="name" name="name" type="text" placeholder="Your full name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+    </div>
+
+    <div class="form-row">
+      <label for="dinner">Which dinner</label>
+      <select id="dinner" name="dinner">
+        <option value="2026-07-12-italian">2026-07-12 — Italian Night</option>
+      </select>
+    </div>
+
+    <div class="form-row">
+      <label for="guests">Guests (number)</label>
+      <input id="guests" name="guests" type="text" placeholder="0">
+    </div>
+
+    <div class="form-row">
+      <label for="notes">Notes (e.g., dietary requirements or dish you're bringing)</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Allergies, dishes, etc."></textarea>
+    </div>
+
+    <div style="margin-top:8px;">
+      <button class="button" type="submit">Send sign-up (email)</button>
+      <small class="small-muted" style="display:block;margin-top:8px;">Tip: Replace the form action with a server endpoint or use a form service (Formspree, Netlify Forms) to handle sign-ups.</small>
+    </div>
+  </form>
+</div>
+
+Notes:
+- The dinners table above includes one “first dinner” row. Update the date/title/location text directly in cooking/dinner-signup.html to match your real first dinner.
+- If you want a dynamic sign-up backend I can wire up a Formspree or Netlify Forms or add a GitHub Actions flow — tell me if you'd like that.

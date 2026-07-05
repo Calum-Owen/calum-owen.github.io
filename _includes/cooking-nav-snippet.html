@@ -1,0 +1,20 @@
+<!-- cooking-nav-snippet: add this into your site's nav include (for example _includes/nav.html) -->
+
+<li class="nav-item dropdown">
+  <a href="/cooking/" class="nav-link">Cooking</a>
+  <ul class="nav-dropdown">
+    <li><a href="/cooking/recipe-template.html">Recipes</a></li>
+    <li><a href="/cooking/dinner-signup.html">Dinner sign up</a></li>
+  </ul>
+</li>
+
+<li class="nav-item">
+  <a href="/contact/" class="nav-link">Contact</a>
+</li>
+
+<!-- Basic CSS for dropdown (add to your main CSS if you want) -->
+<style>
+  .nav-dropdown { display:none; position:absolute; background:#fff; padding:8px 12px; border-radius:6px; box-shadow:0 6px 18px rgba(15,23,42,0.08); }
+  .nav-item.dropdown:hover .nav-dropdown { display:block; }
+  .nav-link { color: var(--text); text-decoration:none; padding:8px; display:inline-block; }
+</style>
