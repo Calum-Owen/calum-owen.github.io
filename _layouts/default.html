@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/site.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <h1 class="site-title"><a href="/">Calum Owen</a></h1>
+        <nav class="main-nav">
+          <a href="/">Home</a>
+          <a href="/about/">About</a>
+          <a href="/recipes/">Recipes</a>
+          <a href="/portfolio/">Portfolio</a>
+          <a href="/triathlon/">Triathlon</a>
+          <a href="/contact/">Contact</a>
+          <input id="search-input" placeholder="Search site…" aria-label="Search">
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      {{ content }}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>&copy; {{ "now" | date: "%Y" }} Calum Owen. Built with Jekyll & GitHub Pages.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>

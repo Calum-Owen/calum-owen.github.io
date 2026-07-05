@@ -1,0 +1,7 @@
+[
+  { "title": "Home", "url": "/", "content": "Engineering Physics student portfolio and blog" },
+  { "title": "Recipes", "url": "/recipes/", "content": "Recipe collection and cooking blog" },
+  { "title": "Engineering Work", "url": "/portfolio/", "content": "Projects and engineering portfolio" },
+  { "title": "Triathlon", "url": "/triathlon/", "content": "Triathlon photos and race results" },
+  { "title": "Contact", "url": "/contact/", "content": "Dinner-party sign-up and contact" }
+]

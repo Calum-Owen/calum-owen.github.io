@@ -1,0 +1,27 @@
+---
+title: "Calum Owen"
+description: "Engineering Physics Student — Building Projects, Cooking with Care, Going the Distance"
+baseurl: ""
+url: "https://calum-owen.github.io"
+logo: /assets/images/profile-placeholder.png
+email: "hidden"
+collections:
+  recipes:
+    output: true
+    permalink: /recipes/:title/
+plugins: []
+markdown: kramdown
+paginate: 5
+
+# Color palette
+palette:
+  ink_blue: "#22304A"
+  dusty_blue: "#5E7A96"
+  sand_beige: "#E8DDCF"
+  terracotta: "#C76D4F"
+  olive_green: "#7E8C57"
+
+# Search index file
+search:
+  path: /search.json
+---
